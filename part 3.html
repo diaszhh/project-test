@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>3 part lab 6</title>
+</head>
+
+<body>
+
+<h1>Part 3</h1>
+<h3>task 1</h3>
+<li> 1</li>
+    <br>
+<button onclick="document.getElementById('a').innerHTML =a.constructor">Click me</button>
+<p id="a"></p>
+<script>
+let boo = true;
+</script>
+<!--The constructor property returns the function that created the Boolean prototype.
+For JavaScript booleans the constructor property returns:
+function Boolean() { [native code] } -->
+
+<li> 2</li>
+    <br>
+<button onclick="document.getElementById('a2').innerHTML = acer.laptop()">Click me</button>
+	<p id="a2"></p>
+<script>
+
+	Boolean.prototype.laptop = function() {
+ 		if (this.valueOf() == true) {
+ 			return "ACER";
+ 			} else {
+ 			return "another laptop";
+ 			}
+	};
+	let acer = true;
+</script>
+	<!--The prototype is a global constructor available for all JS objects.
+Boolean.prototype referres to the global Boolean() object.
+The prototype constructor allows you to add new properties and methods to booleans.
+	Return "acer" if a boolean value is true, otherwise display " another laptop"-->
+
+    
+<li> 3</li>
+    <br>
+<button onclick="document.getElementById('a3').innerHTML = typeof b">Click me</button>
+<p id="a3"></p>
+
+<script>
+let a = true;
+let b = a.toString(); 
+</script>
+    <!-- The Boolean.toString() method returns a boolean value as a string.
+The Boolean.toString() is called by JavaScript automatically whenever a boolean is used in a string operation. -->
+    
+    
+<li> 4</li>
+    <br>
+<button onclick="document.getElementById('a4').innerHTML = a.valueOf()">Click</button>
+<p id="a4"></p>
+
+<script>
+let a = true;
+</script>
+<!--The value Of() method returns the primitive value of a boolean. valueOf() is usually called by JavaScript behind the scenes, and not explicitly in code.-->
+
+    
+ <h3> task 2</h3>
+    <!-- Assignment operators are used to assign values to JavaScript variables.
+Given that x = 4 and y = 2 the table below explains the assignment operators:
+=	x = y	x = y	x = 2	
++=	x += y	x = x + y	x = 6	
+-=	x -= y	x = x - y	x = 2	
+*=	x *= y	x = x * y	x = 8	
+/=	x /= y	x = x / y	x = 2	
+%=	x %= y	x = x % y	x = 0-->
+    
+    <p>example for "=" </p>
+ <button onclick="gg()">Click me</button>
+<p id="a5"></p>
+    
+
+<script>
+    function gg(){
+let x = 4;
+let y = 2;
+x = y;
+        document.getElementById("a5").innerHTML =x;
+        }
+</script>
+    <li> 5</li>
+    <br>
+     <button onclick="ggg()">Click me</button>
+    <script>
+    function ggg(){
+let car1 = "Toyota Camry 30";  // Double quotes
+let car2 = 'Toyota Camry 40';  // Single quotes
+
+document.getElementById("a6").innerHTML =
+car1 + "  and  " + car2; 
+        document.getElementById("a6").innerHTML =x;
+        }
+</script>
+    <p id="a6"></p>
+    
+    <!--Primitive values, like "John Snow", cannot have properties or methods (because they are not objects).
+
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties. 
+we have many strings methods 
+here are a few of them
+
+constructor	Returns the string's constructor function
+
+length	Returns the length of a string
+
+prototype	Allows you to add properties and methods to an object
+
+
+-->
+    
+    
+    
+<a href="part%201%20and%202.html">PART 1 and 2</a>
+</body>
+</html>

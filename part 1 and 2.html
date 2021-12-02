@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<body>
+    	<title>1 and 2part lab6</title>
+    <!-- Part 1	
+   	 Task 2
+	console.log("Hello,  International University of Information Technologies");
+	
+	 Task 3
+	console.log("Hello  International University of Information Technologies".length);
+	
+	 Task 4
+	console.log(14 + 6);
+	console.log(41 - 1);
+	console.log(2 * 5);
+	console.log(100 / 5);
+	console.log(0 < 5);
+	console.log(100 === 100);
+	console.log("50" == 50);
+
+A)  = is used for assigning values to a variable in JavaScript. == is used for comparison between two variables irrespective of the datatype of variable. === is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
+
+	 Task 5
+	console.log(Math.round(4.8) * 6);
+    console.log(Math.random()); 
+    console.log(Math.floor(2.7));
+    console.log(Math.min(6, 1));
+    console.log(Math.max(8, 13))
+    
+    -->
+    
+    <h1> Part 1</h1>
+    <h3> Task 6</h3>
+    <li> a) <button onclick="document.getElementById('demo').innerHTML = Random(5,20)">Random</button>  </li><br>
+    <p id="demo"></p>
+    <script>
+function Random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}    
+    </script>   
+    
+   <li> b) <button onclick="document.getElementById('demo2').innerHTML = Random1(15,100)">Random</button></li><br>
+      <p id="demo2"></p>
+    <script>
+function Random1(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}    
+    </script>
+    
+    <li>  c) <button onclick="document.getElementById('demo3').innerHTML = abayMolodets('Donald Trump', 6.6, 7)">Multiple</button></li><br>
+
+  <script>
+function abayMolodets(trump, a, b) {
+    return trump.length * Math.round(a + b);
+}
+</script>
+    <p id="demo3"></p>
+<h3> Task 7</h3>
+    <button onclick="document.getElementById('demo4').innerHTML = task7('1 411 890', 3.21)"> Button</button>
+
+    <p id="demo4"></p>
+    
+    <script> 
+    function task7(a,b){
+        return a.length/Math.floor(b);
+    }
+    </script>
+    
+<h1> Part 2 </h1>
+    <h3> Task 1</h3>
+Are we there yet
+    <button onclick="yeah()">Try it</button>
+<p id="demo5"></p>
+<script>
+function yeah() {
+  var yeah = prompt("are we there yet?");
+    while(yeah != "yes" && yeah != "yeah" && yeah != "YES" && yeah != "Yes" && yeah != "YEAH" && yeah != "Yeah"){
+        var yeah = prompt("are we there yet?")
+     }
+     alert("Yay, we finally made it")
+        document.getElementById("demo5").innerHTML = txt;
+        } 
+</script>
+ 
+    
+<h3> Task 2</h3>
+<h4> Number 1</h4>
+    <br>
+        <button onclick="adilMolodets()">Click me</button>
+    <p id="demo6"></p>
+
+    <script>
+
+        function adilMolodets(){
+let txxt = "  ";
+for (let a = -10; a <= 19; a++) {
+  txxt += "    " + a + "    ";
+    }
+document.getElementById("demo6").innerHTML = txxt;
+}
+    </script>
+
+    
+    <h4> Number 2</h4>
+    <br>
+    <button onclick="hvostik()">Click me</button>
+    <p id="demo7"   ></p>
+
+    <script>
+        function hvostik(){
+let text="";
+for (let a = 10; a <= 40; a++) {
+  if (a % 2 == 0) {
+    text+="    "+a+"     ";
+  }
+}
+    document.getElementById("demo7").innerHTML=text;
+}
+    </script>
+
+    <h4> Number 3</h4>
+    <br>
+    <button onclick="hvostik2()">Click me</button>
+<p id="demo8"></p>
+
+<script>
+    function hvostik2(){
+let tt = "";
+for (let a= 300; a <= 333; a ++) {
+    if(a%2!=0){
+      tt+="     "+a+"       ";}
+}   
+document.getElementById("demo8").innerHTML = tt;
+}
+    </script>
+
+     <h4> Number 4</h4>
+    <br>
+    <button onclick="hvostik3()">Click me</button>
+<p id="demo9"></p>
+
+<script>
+    function hvostik3(){
+let tx = "";
+for (let a= 5; a <= 50; a ++) {
+    if(a%5==0 && a%3==0){
+      tx+="     "+a+"       ";}
+}   
+document.getElementById("demo9").innerHTML = tx;
+}
+    </script>
+    <h3>Task 3</h3>
+    <h4> Number 1</h4>
+    <br>
+    <button onclick="hvostik4()">Click me</button>
+    
+<p id="demo10"></p>
+
+<script>
+    function hvostik4(){
+let teext = "";
+let a = -10;
+while (a <= 19) {
+  teext += "  " + a+ "  ";
+  a++;
+}
+document.getElementById("demo10").innerHTML = teext;
+}
+</script>    
+    
+    <h4> Number 2</h4>
+    <br>
+    <button onclick="hvostik5()">Click me</button>
+    
+<p id="demo11"></p>
+<script>
+function hvostik5(){
+let asd = " ";
+let a = 10;
+while (a<=40){
+if (a%2 == 0){
+asd += "  " + a + "  ";
+}
+a++;
+}
+document.getElementById("demo11").innerHTML =asd;
+}
+</script>    
+    
+        <h4> Number 3</h4>
+    <br>
+    <button onclick="hvostik6()">Click me</button>
+    
+<p id="demo12"></p>
+<script>
+function hvostik6(){
+let aaa = " ";
+let a = 300;
+while (a<=333){
+if (a%2 != 0){
+aaa += "  " + a + "  ";
+}
+a++;
+}
+document.getElementById("demo12").innerHTML =aaa;
+}
+</script>  
+    
+            <h4> Number 4</h4>
+    <br>
+    <button onclick="hvostik7()">Click me</button>
+    
+<p id="demo13"></p>
+<script>
+function hvostik7(){
+let sss = " ";
+let a = 5;
+while (a<=50){
+if (a%5 == 0 && a%3==0){
+sss += "  " + a + "  ";
+}
+a++;
+}
+document.getElementById("demo13").innerHTML =sss;
+}
+</script> 
+    <a href="part%203.html">PART 3</a>
+    
+</body>
+</html>
